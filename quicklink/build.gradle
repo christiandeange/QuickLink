@@ -1,0 +1,28 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:0.6.+'
+    }
+}
+apply plugin: 'android'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile files('libs/android-support-v4.jar',
+                  'libs/gson-2.2.4.jar',
+                  'libs/ormlite-android-4.45.jar',
+                  'libs/ormlite-core-4.45.jar')
+    compile project(':libraries:JazzyListView')
+    compile 'com.nineoldandroids:library:2.4.0'
+
+}
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion "18.0.1"
+}

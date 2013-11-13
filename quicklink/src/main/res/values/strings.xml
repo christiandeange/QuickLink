@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">QuickLink</string>
+    <string name="app_version">Version %s</string>
+    <string name="ql_authority_content">com.deange.quicklink</string>
+    
+    <string name="url_edit_hint">Type URL</string>
+    <string name="title_description">Create quick links on the fly</string>
+    <string name="failed_create_shortened_url">Failed to shorten URL</string>
+    <string name="failed_copy_shortened_url">Failed to copy URL</string>
+    <string name="need_network">No network connection detected.</string>
+    
+    <string name="nav_drawer_opened">Drawer Opened</string>
+    <string name="nav_drawer_closed">Drawer Closed</string>
+    
+    <string name="about_dialog_about">About</string>
+    <string name="about_developer_name">&#169; Christian De Angelis, 2013</string>
+    <string name="about_app_description">QuickLink is a lightweight application that can convert long URLs to shortened
+        goo.gl links.\n\nURLs can be entered from within this app, or by accessing the Share Ribbon from the browser.</string>
+
+    <string name="font_roboto_light">Roboto-Light.ttf</string>
+    <string name="font_roboto_thin">Roboto-Thin.ttf</string>
+    
+</resources>

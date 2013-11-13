@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:qlink="http://schemas.android.com/apk/res/com.deange.quicklink"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp" >
+
+    <com.deange.quicklink.ui.misc.TextFontView
+        android:id="@+id/item_nav_drawer_page_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:paddingBottom="4dp"
+        android:textColor="#3375E5"
+        android:textSize="20sp"
+        qlink:ql_fontName="Roboto-LightItalic.ttf" />
+
+    <com.deange.quicklink.ui.misc.TextFontView
+        android:id="@+id/item_nav_drawer_timestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:textColor="#777"
+        android:textSize="12sp"
+        qlink:ql_fontName="Roboto-Light.ttf" />
+
+    <com.deange.quicklink.ui.misc.TextFontView
+        android:id="@+id/item_nav_drawer_short_url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_nav_drawer_page_title"
+        android:textColor="#777"
+        android:textSize="14sp"
+        qlink:ql_fontName="Roboto-Light.ttf" />
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_open_about_menu"
+        android:icon="@drawable/ic_about"
+        android:showAsAction="always"
+        android:title="@string/about_dialog_about"/>
+
+</menu>

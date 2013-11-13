@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:qlink="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/bkg_tile_repeat"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:focusableInTouchMode="true" >
+
+            <com.deange.quicklink.ui.misc.TextFontView
+                android:id="@+id/landing_app_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/app_name"
+                android:textSize="40sp"
+                qlink:ql_fontName="@string/font_roboto_thin" />
+
+            <com.deange.quicklink.ui.misc.TextFontView
+                android:id="@+id/landing_app_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/landing_app_title"
+                android:gravity="center"
+                android:text="@string/title_description"
+                android:textSize="22sp"
+                qlink:ql_fontName="@string/font_roboto_thin" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/landing_url_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:hint="@string/url_edit_hint"
+                android:imeOptions="actionGo"
+                android:inputType="textUri"
+                android:minWidth="500dp"
+                android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        layout="@layout/view_message_bar_layout" />
+
+</RelativeLayout>
